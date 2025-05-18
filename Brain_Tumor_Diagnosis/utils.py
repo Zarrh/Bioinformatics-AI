@@ -164,10 +164,15 @@ def test_model(model, test_loader, num_images_to_show=10):
 
   plt.figure(figsize=(8, 6))
   sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
-              xticklabels=categories, yticklabels=categories)
-  plt.title('Confusion Matrix')
-  plt.xlabel('Predicted Label')
-  plt.ylabel('True Label')
+      xticklabels=categories, yticklabels=categories, annot_kws={"color": "grey", "weight": "bold"})
+  plt.title('Confusion Matrix', color='grey', weight='bold')
+  plt.xlabel('Predicted Label', color='grey', weight='bold')
+  plt.ylabel('True Label', color='grey', weight='bold')
+  plt.xticks(color='grey', fontweight='bold')
+  plt.yticks(color='grey', fontweight='bold')
+  plt.tight_layout()
+  plt.savefig("confusion_matrix.png", transparent=True)
+  plt.close()
   plt.show()
 
 
