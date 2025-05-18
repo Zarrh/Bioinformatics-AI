@@ -1,0 +1,10 @@
+bin
+__pycache__
+dataset
+include
+lib
+lib64
+share
+media
+pyvenv.cfg
+*.pkl

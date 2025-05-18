@@ -1,0 +1,10 @@
+media
+__pycache__
+bin
+include
+data
+lib
+lib64
+*.pth
+pyvenv.cfg
+*.txt
